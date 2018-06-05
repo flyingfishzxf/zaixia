@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="vLine">#2A9869</color>
 </resources>
