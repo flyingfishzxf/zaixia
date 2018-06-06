@@ -14,6 +14,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     private TextView title;
     private TextView subTitle;
     private Button feedBack;
+    private Button about;
 
     private Intent intent;
 
@@ -25,10 +26,12 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         title = findViewById(R.id.title);
         subTitle = findViewById(R.id.sub_title);
         feedBack = findViewById(R.id.feed_back);
+        about = findViewById(R.id.about);
 
         title.setText("在下题库");
         subTitle.setText("设置");
         feedBack.setOnClickListener(this);
+        about.setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +39,10 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.feed_back:
                 intent = new Intent(this, FeedBackActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.about:
+                intent = new Intent(this, AboutActivity.class);
                 startActivity(intent);
                 break;
             default:
