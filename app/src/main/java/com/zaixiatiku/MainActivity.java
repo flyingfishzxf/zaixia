@@ -44,9 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.reset_password:
                 intent = new Intent(this, ResetPasswordActivity.class);
                 startActivity(intent);
+                break;
             case R.id.to_list:
                 intent = new Intent(this, PaperListActivity.class);
                 startActivity(intent);
+                break;
             default:
                 break;
         }

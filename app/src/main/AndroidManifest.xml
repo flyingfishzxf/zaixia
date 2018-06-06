@@ -21,7 +21,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".CaptchaActivity" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".PaperListActivity"></activity>
+        <activity android:name=".PaperListActivity" />
+        <activity android:name=".settings.SettingsActivity"></activity>
     </application>
 
 </manifest>
