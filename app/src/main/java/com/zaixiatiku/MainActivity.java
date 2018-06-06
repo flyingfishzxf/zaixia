@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button toRegister;
     private Button resetPassword;
     private Button toList;
+    private Button toIndex;
     private Intent intent;
 
     @Override
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toRegister = findViewById(R.id.to_register);
         resetPassword = findViewById(R.id.reset_password);
         toList = findViewById(R.id.to_list);
+        toIndex = findViewById(R.id.to_index);
 
         toLogin.setOnClickListener(this);
         toRegister.setOnClickListener(this);
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.to_list:
                 intent = new Intent(this, PaperListActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.to_index:
+                intent = new Intent(this, IndexActivity.class);
                 startActivity(intent);
                 break;
             default:
